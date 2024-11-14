@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "cb68fc2d-b442-4a0b-aa0c-e550cc0b239c",
+		"name": "eventsProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25353945"
+	},
+	"item": [
+		{
+			"name": "Get All Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/events",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Events",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "5509"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:33:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"evt_001\",\n        \"title\": \"Web Development Workshop\",\n        \"description\": \"Learn modern web development practices with React and Node.js. Perfect for beginners and intermediate developers looking to expand their skillset.\",\n        \"location\": \"Tech Hub, 123 Innovation Street, San Francisco\",\n        \"date\": \"2024-04-15T10:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_002\",\n        \"title\": \"AI and Machine Learning Conference\",\n        \"description\": \"Join industry experts for a day of insights into the latest developments in AI and machine learning. Featuring keynote speakers and hands-on workshops.\",\n        \"location\": \"Data Science Center, 456 Technology Avenue, Boston\",\n        \"date\": \"2024-05-20T09:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_003\",\n        \"title\": \"Startup Networking Mixer\",\n        \"description\": \"Connect with fellow entrepreneurs, investors, and tech professionals. Great opportunity for networking and discovering potential collaborations.\",\n        \"location\": \"Startup Space, 789 Business Boulevard, Austin\",\n        \"date\": \"2024-04-30T18:30:00.000Z\"\n    },\n    {\n        \"id\": \"evt_004\",\n        \"title\": \"Mobile App Development Bootcamp\",\n        \"description\": \"Intensive 1-day bootcamp covering iOS and Android development fundamentals. Build your first mobile app by the end of the day!\",\n        \"location\": \"Code Academy, 321 Learning Lane, Seattle\",\n        \"date\": \"2024-06-10T11:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_005\",\n        \"title\": \"Cybersecurity Summit\",\n        \"description\": \"Expert-led sessions on the latest cybersecurity threats and defense strategies. Essential for IT professionals and security enthusiasts.\",\n        \"location\": \"Security Center, 555 Protection Plaza, New York\",\n        \"date\": \"2024-05-05T13:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_006\",\n        \"title\": \"Cloud Computing Workshop\",\n        \"description\": \"Deep dive into AWS, Azure, and Google Cloud Platform. Learn cloud architecture, deployment, and best practices.\",\n        \"location\": \"Cloud Institute, 777 Sky Drive, Chicago\",\n        \"date\": \"2024-06-15T14:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_007\",\n        \"title\": \"Data Analytics Symposium\",\n        \"description\": \"Explore big data analytics, visualization tools, and predictive modeling techniques with industry professionals.\",\n        \"location\": \"Analytics Center, 888 Data Lane, Houston\",\n        \"date\": \"2024-07-01T09:30:00.000Z\"\n    },\n    {\n        \"id\": \"evt_008\",\n        \"title\": \"DevOps Practices Workshop\",\n        \"description\": \"Master continuous integration, deployment, and modern DevOps tools. Hands-on experience with popular CI/CD pipelines.\",\n        \"location\": \"DevOps Hub, 999 Pipeline Road, Portland\",\n        \"date\": \"2024-05-25T10:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_009\",\n        \"title\": \"Blockchain Technology Forum\",\n        \"description\": \"Understanding blockchain fundamentals, smart contracts, and decentralized applications. Network with blockchain enthusiasts.\",\n        \"location\": \"Crypto Center, 111 Chain Street, Miami\",\n        \"date\": \"2024-06-20T11:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_010\",\n        \"title\": \"UX/UI Design Workshop\",\n        \"description\": \"Learn user-centered design principles, wireframing, prototyping, and modern design tools like Figma and Sketch.\",\n        \"location\": \"Design Studio, 222 Creative Avenue, Los Angeles\",\n        \"date\": \"2024-07-10T13:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_011\",\n        \"title\": \"Python Programming Bootcamp\",\n        \"description\": \"Comprehensive Python programming course covering basics to advanced concepts, including data science libraries.\",\n        \"location\": \"Code Lab, 333 Python Path, Denver\",\n        \"date\": \"2024-08-05T09:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_012\",\n        \"title\": \"IoT Innovation Summit\",\n        \"description\": \"Explore the latest in Internet of Things technology, smart devices, and connected systems.\",\n        \"location\": \"IoT Center, 444 Smart Street, Dallas\",\n        \"date\": \"2024-07-15T10:30:00.000Z\"\n    },\n    {\n        \"id\": \"evt_013\",\n        \"title\": \"Women in Tech Conference\",\n        \"description\": \"Celebrating diversity in technology. Featuring inspiring speakers, mentorship opportunities, and career development workshops.\",\n        \"location\": \"Diversity Hub, 555 Inclusion Road, Atlanta\",\n        \"date\": \"2024-06-25T09:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_014\",\n        \"title\": \"Game Development Workshop\",\n        \"description\": \"Create your first video game! Learn game design principles, Unity development, and basic 3D modeling.\",\n        \"location\": \"Game Studio, 666 Player One Plaza, San Diego\",\n        \"date\": \"2024-08-15T11:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_015\",\n        \"title\": \"Digital Marketing Masterclass\",\n        \"description\": \"Master SEO, social media marketing, and digital advertising strategies for the modern web.\",\n        \"location\": \"Marketing Hub, 777 Digital Drive, Phoenix\",\n        \"date\": \"2024-07-20T14:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_016\",\n        \"title\": \"5G Technology Symposium\",\n        \"description\": \"Understanding the future of mobile connectivity, 5G applications, and network infrastructure.\",\n        \"location\": \"Telecom Center, 888 Network Avenue, Philadelphia\",\n        \"date\": \"2024-08-25T10:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_017\",\n        \"title\": \"Agile Project Management Workshop\",\n        \"description\": \"Learn Scrum, Kanban, and other agile methodologies. Perfect for project managers and team leads.\",\n        \"location\": \"Agile Space, 999 Sprint Street, Minneapolis\",\n        \"date\": \"2024-09-05T09:30:00.000Z\"\n    },\n    {\n        \"id\": \"evt_018\",\n        \"title\": \"AR/VR Development Conference\",\n        \"description\": \"Dive into augmented and virtual reality development. Hands-on experience with latest AR/VR hardware.\",\n        \"location\": \"Reality Lab, 123 Virtual Lane, Las Vegas\",\n        \"date\": \"2024-09-15T11:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_019\",\n        \"title\": \"Tech Startup Pitch Competition\",\n        \"description\": \"Present your startup idea to venture capitalists and angel investors. Network with successful entrepreneurs.\",\n        \"location\": \"Venture Hall, 456 Founder's Way, Washington DC\",\n        \"date\": \"2024-08-30T15:00:00.000Z\"\n    },\n    {\n        \"id\": \"evt_020\",\n        \"title\": \"Software Testing Automation\",\n        \"description\": \"Master automated testing frameworks, continuous testing, and quality assurance best practices.\",\n        \"location\": \"QA Center, 789 Testing Road, Detroit\",\n        \"date\": \"2024-09-20T10:00:00.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Event - Exists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/events/evt_003",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events",
+						"evt_003"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Event - Exists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events/evt_003",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"evt_003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "305"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:33:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"evt_003\",\n    \"title\": \"Startup Networking Mixer\",\n    \"description\": \"Connect with fellow entrepreneurs, investors, and tech professionals. Great opportunity for networking and discovering potential collaborations.\",\n    \"location\": \"Startup Space, 789 Business Boulevard, Austin\",\n    \"date\": \"2024-04-30T18:30:00.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Event - Not Found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/events/evt_0033333",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events",
+						"evt_0033333"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Event - Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events/evt_0033333",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"evt_0033333"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "27"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:34:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Event not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Event - Valid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"[updated] Startup Networking Mixer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/events/evt_003",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events",
+						"evt_003"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Event - Valid",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"[updated] Startup Networking Mixer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/events/evt_003",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"evt_003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "315"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:41:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"evt_003\",\n    \"title\": \"[updated] Startup Networking Mixer\",\n    \"description\": \"Connect with fellow entrepreneurs, investors, and tech professionals. Great opportunity for networking and discovering potential collaborations.\",\n    \"location\": \"Startup Space, 789 Business Boulevard, Austin\",\n    \"date\": \"2024-04-30T18:30:00.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Event - Unknown key",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    // should be ignored and not be reflected in the updated object\n    \"test\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/events/evt_003",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events",
+						"evt_003"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Event - Unknown key",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // should be ignored and not be reflected in the updated object\n    \"test\": \"test123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/events/evt_003",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"evt_003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "305"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:45:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"evt_003\",\n    \"title\": \"Startup Networking Mixer\",\n    \"description\": \"Connect with fellow entrepreneurs, investors, and tech professionals. Great opportunity for networking and discovering potential collaborations.\",\n    \"location\": \"Startup Space, 789 Business Boulevard, Austin\",\n    \"date\": \"2024-04-30T18:30:00.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Event - invalid date",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    // should be ignored and not be reflected in the updated object\n    \"test\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/events/evt_003",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events",
+						"evt_003"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Event - invalid date",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date\": \"2024-2024-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/events/evt_003",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"evt_003"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "24"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:46:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid date\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete event - exists",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/events/evt_003",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events",
+						"evt_003"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete event - exists",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events/evt_003",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"evt_003"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:47:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Delete event - not found",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/events/evt_00333333",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"events",
+						"evt_00333333"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete event - not found",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events/evt_00333333",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"evt_00333333"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "27"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Nov 2024 10:48:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Event not found\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
