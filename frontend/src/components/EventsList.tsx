@@ -12,8 +12,10 @@ const EventsList: React.FC = () => {
   useEffect(() => {
     const loadEvents = async () => {
       const events = await getEvents();
-      setEvents(events);
-      setEventsLoaded(true);
+      setTimeout(() => {
+        setEvents(events);
+        setEventsLoaded(true);
+      }, 1000);
     };
     loadEvents();
   }, []);
@@ -121,7 +123,7 @@ const EventsList: React.FC = () => {
           </div>
         </div>
       ) : (
-        <LoadingSpinner />
+        <LoadingSpinner fullScreen={true} />
       )}
     </>
   );
