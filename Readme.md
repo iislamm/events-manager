@@ -1,6 +1,11 @@
-# Project Title
+# Events Manager
 
 An events management application built with Node.js and React TypeScript.
+
+## Preview
+<img width="1440" alt="Preview Screenshot" src="https://github.com/user-attachments/assets/10f33f20-c74b-44bc-b0aa-5950769095c9">
+
+
 
 ## Table of Contents
 
