@@ -11,7 +11,7 @@
 
 ## Frontend
 
-1. Project setup - use figma for design
+1. Project setup - use tailwind for design
 1. Structural components
 1. Interact with backend apis
 1. Design enhancements
