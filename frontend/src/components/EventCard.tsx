@@ -19,13 +19,13 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
   return (
     <div className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
       <div
-        className="h-48 relative"
+        className="h-56 relative"
         onMouseMove={handleMouseMove}
         style={{
           background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgb(59, 130, 246), rgb(168, 85, 247))`,
         }}
       >
-        <div className="absolute bottom-4 left-4 text-white">
+        <div className="absolute bottom-4 left-4 text-white right-4">
           <h1 className="text-4xl font-bold ">{event.title}</h1>
           <div className="flex items-center gap-2 text-sm mt-2">
             <svg
