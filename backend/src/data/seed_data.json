@@ -1,0 +1,144 @@
+{
+  "events": [
+    {
+      "id": "evt_001",
+      "title": "Web Development Workshop",
+      "description": "Learn modern web development practices with React and Node.js. Perfect for beginners and intermediate developers looking to expand their skillset.",
+      "location": "Tech Hub, 123 Innovation Street, San Francisco",
+      "date": "2024-04-15T10:00:00Z"
+    },
+    {
+      "id": "evt_002",
+      "title": "AI and Machine Learning Conference",
+      "description": "Join industry experts for a day of insights into the latest developments in AI and machine learning. Featuring keynote speakers and hands-on workshops.",
+      "location": "Data Science Center, 456 Technology Avenue, Boston",
+      "date": "2024-05-20T09:00:00Z"
+    },
+    {
+      "id": "evt_003",
+      "title": "Startup Networking Mixer",
+      "description": "Connect with fellow entrepreneurs, investors, and tech professionals. Great opportunity for networking and discovering potential collaborations.",
+      "location": "Startup Space, 789 Business Boulevard, Austin",
+      "date": "2024-04-30T18:30:00Z"
+    },
+    {
+      "id": "evt_004",
+      "title": "Mobile App Development Bootcamp",
+      "description": "Intensive 1-day bootcamp covering iOS and Android development fundamentals. Build your first mobile app by the end of the day!",
+      "location": "Code Academy, 321 Learning Lane, Seattle",
+      "date": "2024-06-10T11:00:00Z"
+    },
+    {
+      "id": "evt_005",
+      "title": "Cybersecurity Summit",
+      "description": "Expert-led sessions on the latest cybersecurity threats and defense strategies. Essential for IT professionals and security enthusiasts.",
+      "location": "Security Center, 555 Protection Plaza, New York",
+      "date": "2024-05-05T13:00:00Z"
+    },
+    {
+      "id": "evt_006",
+      "title": "Cloud Computing Workshop",
+      "description": "Deep dive into AWS, Azure, and Google Cloud Platform. Learn cloud architecture, deployment, and best practices.",
+      "location": "Cloud Institute, 777 Sky Drive, Chicago",
+      "date": "2024-06-15T14:00:00Z"
+    },
+    {
+      "id": "evt_007",
+      "title": "Data Analytics Symposium",
+      "description": "Explore big data analytics, visualization tools, and predictive modeling techniques with industry professionals.",
+      "location": "Analytics Center, 888 Data Lane, Houston",
+      "date": "2024-07-01T09:30:00Z"
+    },
+    {
+      "id": "evt_008",
+      "title": "DevOps Practices Workshop",
+      "description": "Master continuous integration, deployment, and modern DevOps tools. Hands-on experience with popular CI/CD pipelines.",
+      "location": "DevOps Hub, 999 Pipeline Road, Portland",
+      "date": "2024-05-25T10:00:00Z"
+    },
+    {
+      "id": "evt_009",
+      "title": "Blockchain Technology Forum",
+      "description": "Understanding blockchain fundamentals, smart contracts, and decentralized applications. Network with blockchain enthusiasts.",
+      "location": "Crypto Center, 111 Chain Street, Miami",
+      "date": "2024-06-20T11:00:00Z"
+    },
+    {
+      "id": "evt_010",
+      "title": "UX/UI Design Workshop",
+      "description": "Learn user-centered design principles, wireframing, prototyping, and modern design tools like Figma and Sketch.",
+      "location": "Design Studio, 222 Creative Avenue, Los Angeles",
+      "date": "2024-07-10T13:00:00Z"
+    },
+    {
+      "id": "evt_011",
+      "title": "Python Programming Bootcamp",
+      "description": "Comprehensive Python programming course covering basics to advanced concepts, including data science libraries.",
+      "location": "Code Lab, 333 Python Path, Denver",
+      "date": "2024-08-05T09:00:00Z"
+    },
+    {
+      "id": "evt_012",
+      "title": "IoT Innovation Summit",
+      "description": "Explore the latest in Internet of Things technology, smart devices, and connected systems.",
+      "location": "IoT Center, 444 Smart Street, Dallas",
+      "date": "2024-07-15T10:30:00Z"
+    },
+    {
+      "id": "evt_013",
+      "title": "Women in Tech Conference",
+      "description": "Celebrating diversity in technology. Featuring inspiring speakers, mentorship opportunities, and career development workshops.",
+      "location": "Diversity Hub, 555 Inclusion Road, Atlanta",
+      "date": "2024-06-25T09:00:00Z"
+    },
+    {
+      "id": "evt_014",
+      "title": "Game Development Workshop",
+      "description": "Create your first video game! Learn game design principles, Unity development, and basic 3D modeling.",
+      "location": "Game Studio, 666 Player One Plaza, San Diego",
+      "date": "2024-08-15T11:00:00Z"
+    },
+    {
+      "id": "evt_015",
+      "title": "Digital Marketing Masterclass",
+      "description": "Master SEO, social media marketing, and digital advertising strategies for the modern web.",
+      "location": "Marketing Hub, 777 Digital Drive, Phoenix",
+      "date": "2024-07-20T14:00:00Z"
+    },
+    {
+      "id": "evt_016",
+      "title": "5G Technology Symposium",
+      "description": "Understanding the future of mobile connectivity, 5G applications, and network infrastructure.",
+      "location": "Telecom Center, 888 Network Avenue, Philadelphia",
+      "date": "2024-08-25T10:00:00Z"
+    },
+    {
+      "id": "evt_017",
+      "title": "Agile Project Management Workshop",
+      "description": "Learn Scrum, Kanban, and other agile methodologies. Perfect for project managers and team leads.",
+      "location": "Agile Space, 999 Sprint Street, Minneapolis",
+      "date": "2024-09-05T09:30:00Z"
+    },
+    {
+      "id": "evt_018",
+      "title": "AR/VR Development Conference",
+      "description": "Dive into augmented and virtual reality development. Hands-on experience with latest AR/VR hardware.",
+      "location": "Reality Lab, 123 Virtual Lane, Las Vegas",
+      "date": "2024-09-15T11:00:00Z"
+    },
+    {
+      "id": "evt_019",
+      "title": "Tech Startup Pitch Competition",
+      "description": "Present your startup idea to venture capitalists and angel investors. Network with successful entrepreneurs.",
+      "location": "Venture Hall, 456 Founder's Way, Washington DC",
+      "date": "2024-08-30T15:00:00Z"
+    },
+    {
+      "id": "evt_020",
+      "title": "Software Testing Automation",
+      "description": "Master automated testing frameworks, continuous testing, and quality assurance best practices.",
+      "location": "QA Center, 789 Testing Road, Detroit",
+      "date": "2024-09-20T10:00:00Z"
+    }
+  ]
+}
