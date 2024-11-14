@@ -12,3 +12,15 @@ export const getEventById = async (id: string): Promise<Event | null> => {
   }
   return (await response.json()) as Event;
 };
+
+export const updateEvent = async (
+  id: string,
+  event: Event
+): Promise<Event | null> => {
+  const response = await fetch(`http://localhost:3000/events/${id}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(event),
+  });
+  return (await response.json()) as Event;
+};

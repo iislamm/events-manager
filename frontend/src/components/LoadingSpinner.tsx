@@ -1,8 +1,12 @@
 import React from "react";
 
-function LoadingSpinner() {
+function LoadingSpinner({ fullScreen = false }: { fullScreen?: boolean }) {
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div
+      className={`flex items-center justify-center ${
+        fullScreen ? "min-h-screen" : ""
+      }`}
+    >
       <div
         className="w-20 h-20 rounded-full border-8 border-blue-200 border-t-blue-600 animate-spin"
         style={{

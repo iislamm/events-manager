@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Event } from "../types/events";
 import { useParams } from "react-router-dom";
-import { getEventById } from "../lib/events";
+import { getEventById, updateEvent } from "../lib/events";
 import LoadingSpinner from "./LoadingSpinner";
 import NotFound from "./404";
+import EventEditDialog from "./EventEditDialog";
 
 const EventDetails: React.FC = () => {
   const [event, setEvent] = useState<Event | null>(null);
   const [eventFound, setEventFound] = useState<boolean | undefined>(undefined);
   const [eventLoading, setEventLoading] = useState<boolean>(true);
+  const [showEditDialog, setShowEditDialog] = useState(false);
+  const [updateLoading, setUpdateLoading] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
@@ -28,6 +31,19 @@ const EventDetails: React.FC = () => {
     };
     loadEvent();
   }, [id]);
+
+  const handleEditSubmit = async (updatedEvent: Event) => {
+    if (!id) return;
+    setUpdateLoading(true);
+    const result = await updateEvent(id, updatedEvent);
+    if (result) {
+      setTimeout(() => {
+        setUpdateLoading(false);
+        setEvent(result);
+        setShowEditDialog(false);
+      }, 1000);
+    }
+  };
 
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -104,7 +120,7 @@ const EventDetails: React.FC = () => {
           </div>
           <button
             className="fixed bottom-8 right-8 p-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition-colors duration-200"
-            onClick={() => console.log("Edit clicked")}
+            onClick={() => setShowEditDialog(true)}
           >
             <svg
               className="w-6 h-6"
@@ -121,6 +137,15 @@ const EventDetails: React.FC = () => {
               />
             </svg>
           </button>
+          {showEditDialog && event && (
+            <EventEditDialog
+              isOpen={showEditDialog}
+              event={event}
+              loading={updateLoading}
+              onClose={() => setShowEditDialog(false)}
+              onSave={handleEditSubmit}
+            />
+          )}
         </div>
       )}
     </div>
