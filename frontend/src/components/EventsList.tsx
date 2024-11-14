@@ -25,6 +25,10 @@ const EventsList: React.FC = () => {
     );
   };
 
+  const handleEventDelete = (deletedEvent: Event) => {
+    setEvents(events.filter((event) => event.id !== deletedEvent.id));
+  };
+
   return (
     <>
       {eventsLoaded ? (
@@ -34,6 +38,7 @@ const EventsList: React.FC = () => {
               event={event}
               key={event.id}
               onUpdate={handleEventUpdate}
+              onDelete={handleEventDelete}
             />
           ))}
         </div>

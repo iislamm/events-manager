@@ -24,3 +24,10 @@ export const updateEvent = async (
   });
   return (await response.json()) as Event;
 };
+
+export const deleteEvent = async (id: string): Promise<boolean> => {
+  const response = await fetch(`http://localhost:3000/events/${id}`, {
+    method: 'DELETE',
+  });
+  return response.ok;
+};

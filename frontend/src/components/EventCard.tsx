@@ -2,17 +2,20 @@ import React, { useState } from "react";
 import { Event } from "../types/events";
 import EventEditDialog from "./EventEditDialog";
 import { Link } from "react-router-dom";
-import { updateEvent } from "../lib/events";
+import { deleteEvent, updateEvent } from "../lib/events";
+import LoadingSpinner from "./LoadingSpinner";
 
 interface EventCardProps {
   event: Event;
   onUpdate?: (event: Event) => void;
+  onDelete?: (event: Event) => void;
 }
 
-const EventCard: React.FC<EventCardProps> = ({ event, onUpdate }) => {
+const EventCard: React.FC<EventCardProps> = ({ event, onUpdate, onDelete }) => {
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
   const [showEditDialog, setShowEditDialog] = useState(false);
   const [updateLoading, setUpdateLoading] = useState(false);
+  const [deleteLoading, setDeleteLoading] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -38,14 +41,25 @@ const EventCard: React.FC<EventCardProps> = ({ event, onUpdate }) => {
     }
   };
 
-  const handleDelete = () => {
-    // TODO: Implement delete functionality
-    console.log("Delete event:", event);
+  const handleDelete = async () => {
+    setDeleteLoading(true);
+    const result = await deleteEvent(event.id);
+    if (result) {
+      setTimeout(() => {
+        setDeleteLoading(false);
+        onDelete?.(event);
+      }, 1000);
+    }
   };
 
   return (
-    <div className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <div className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow relative pb-16">
       <Link to={`/events/${event.id}`}>
+        {(updateLoading || deleteLoading) && (
+          <div className="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center z-10">
+            <LoadingSpinner fullScreen={false} />
+          </div>
+        )}
         <div
           className="h-56 relative"
           onMouseMove={handleMouseMove}
@@ -103,7 +117,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, onUpdate }) => {
           </div>
         </div>
       </Link>
-      <div className="px-4 py-3 bg-gray-50 border-t flex justify-end gap-2">
+      <div className="px-4 py-3 bg-gray-50 border-t flex justify-end gap-2 absolute bottom-0 left-0 right-0">
         <button
           onClick={handleEdit}
           className="px-3 py-1.5 text-sm font-medium text-blue-600 hover:bg-blue-50 rounded-md transition-colors"

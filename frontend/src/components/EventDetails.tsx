@@ -56,7 +56,7 @@ const EventDetails: React.FC = () => {
 
   return (
     <div className="w-full">
-      {eventLoading && <LoadingSpinner />}
+      {eventLoading && eventFound !== false && <LoadingSpinner />}
       {eventFound === false && <NotFound />}
       {event && (
         <div className="relative">
